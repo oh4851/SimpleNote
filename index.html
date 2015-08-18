@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Metadata Load -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>SimpleNote</title>
 
-  <!-- CSS  -->
+  <!-- CSS(stylesheet)  Load -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -15,7 +16,7 @@
     <nav class="top-nav light-blue lighten-1">
       <div class="container">
       <div class="nav-wrapper">
-        <a href="#" class="page-title">SimpleNote</a>
+        <a href="" class="page-title">SimpleNote</a>
       </div>
       </div>
     </nav>
@@ -23,49 +24,37 @@
 
   <main>
     <div class="container">
-      <div class="section">
-        <table>
-          <thead>
-            <tr>
-              <th data-field="id">No.</th>
-              <th data-field="title">Title</th>
-              <th data-field="name">Priority</th>
-              <th data-field="datetime">Date</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Test Title 1</td>
-              <td>4.5</td>
-              <td>2015-08-17</td>
-              <td>
-                <a href="#" class="waves-effect waves-light btn orange lighten-1"><i class="material-icons">edit</i></a>
-                <a href="#" class="waves-effect waves-light btn red lighten-1"><i class="material-icons">delete</i></a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <table class="hoverable">
+        <thead>
+          <tr>
+            <th data-field="id">No.</th>
+            <th data-field="title">Title</th>
+            <th data-field="name">Priority</th>
+            <th data-field="datetime">Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
     </div>
     <div class="fixed-action-btn" style="bottom:45px; right:24px;">
-    <a href="#" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+      <button id="btn_add" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></button>
     </div>
   </main>
 
   <footer class="page-footer orange">
     <div class="footer-copyright">
       <div class="container">
-      Made by <a href="#" class="orange-text text-lighten-3">Hyeok Oh</a>
+      Made by <label class="orange-text text-lighten-3">Hyeok Oh</label>
       </div>
     </div>
   </footer>
 
-  <!--  Scripts-->
+  <!--  JavaScripts Load -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="js/materialize.js" type="text/javascript"></script>
+  <script src="js/init.js" type="text/javascript"></script>
 
   </body>
 </html>
